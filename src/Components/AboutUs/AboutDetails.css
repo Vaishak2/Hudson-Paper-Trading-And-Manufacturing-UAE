@@ -1,0 +1,13 @@
+.transition-height {
+    transition: max-height 1s ease-in-out;
+    overflow: hidden;
+  }
+  
+  .max-height-0 {
+    max-height: 0;
+  }
+  
+  .max-height-full {
+    max-height: 1000px; /* Adjust this value as needed */
+  }
+  
