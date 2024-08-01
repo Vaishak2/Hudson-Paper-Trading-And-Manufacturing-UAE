@@ -33,7 +33,7 @@ function Productdetails() {
   const productList = [
     {
       "id": 1,
-      "name": "Bleached Kraft Papers (MG and MF)",
+      "name": "Kraft Papers (MG and MF)",
       "image": whitebleach,
       "dis": "Bleached kraft papers are made from wood pulp that has been bleached to achieve a white color.",
       "strength": "High tensile strength and tear resistance.",
@@ -200,9 +200,9 @@ function Productdetails() {
   return (
     <div className='sm:px-[95px] px-4 text-white'>
       <div className='w-full gap-32 sm:flex '>
-        <div><img src={product.image} className='sm:h-[400px] rounded-lg'></img></div>
-        <div>
-          <div className='mt-8 sm:mt-0 text-2xl'>{product.name}</div>
+        <div className='sm:w-[507px]'><img src={product.image} className='sm:h-[406px] sm:w-[507px] rounded-lg'></img></div>
+        <div className='sm:w-[615px]'>
+          <div className='mt-8 sm:mt-0 text-2xl'>{product.id === 1 ? 'Bleached Kraft Papers' : product.name}</div>
           <div className='py-6 text-[#C9C9C9]'>{product.dis}</div>
           <div className=' sm:flex xl:gap-16 sm:gap-8'>
             <div className='text-[#C9C9C9]'>Properties: </div>
@@ -215,21 +215,23 @@ function Productdetails() {
 
           <div>
             {product.id === 1 ?
-              <div>
+              <div className='sm:mt-6'>
                 <div className='text-[#C9C9C9] py-4'>Variants:</div>
                 <div className='flex gap-5'>
-                  {/* <div>
-                <div>
-                  <div><img src={Rectangle3891} width={100} height={20}></img></div>
-                  <div className='w-20 whitespace-nowrap'>Bleached <br />
-                    Kraft Papers</div>
-                </div>
-              </div> */}
+
+                  <div>
+                    <div>
+                      <div><img className='border-4 rounded-lg border-secondary-color' src={product.image} width={100} height={20}></img></div>
+                      <div className='w-20 whitespace-nowrap text-secondary-color leading-5'>Bleached <br />
+                        Kraft Papers</div>
+                    </div>
+                  </div>
+
                   <Link to='/products/productdetails/16'>
                     <div onClick={scrollToTop}>
                       <div>
                         <div><img className='rounded-lg' src={unbleach} width={100} height={20}></img></div>
-                        <div className='w-20 whitespace-nowrap'>Unbleached  <br />
+                        <div className='w-20 whitespace-nowrap leading-5'>Unbleached  <br />
                           Kraft Papers</div>
                       </div>
                     </div>
@@ -239,26 +241,30 @@ function Productdetails() {
           </div>
 
           <div>
-          {product.id === 16 ?
+            {product.id === 16 ?
               <div>
                 <div className='text-[#C9C9C9] py-4'>Variants:</div>
                 <div className='flex gap-5'>
-                  {/* <div>
-                <div>
-                  <div><img src={Rectangle3891} width={100} height={20}></img></div>
-                  <div className='w-20 whitespace-nowrap'>Bleached <br />
-                    Kraft Papers</div>
-                </div>
-              </div> */}
+
                   <Link to='/products/productdetails/1'>
                     <div onClick={scrollToTop}>
                       <div>
                         <div><img className='rounded-lg' src={whitebleach} width={100} height={20}></img></div>
-                        <div className='w-20 whitespace-nowrap'>Bleached  <br />
+                        <div className='w-20 whitespace-nowrap leading-5'>Bleached  <br />
                           Kraft Papers</div>
                       </div>
                     </div>
                   </Link>
+
+                  <div>
+                    <div>
+                      <div><img className='border-4 rounded-lg border-secondary-color' src={product.image} width={100} height={20}></img></div>
+                      <div className='w-20 whitespace-nowrap text-secondary-color leading-5'>Unbleached <br />
+                        Kraft Papers</div>
+                    </div>
+                  </div>
+
+
                 </div>
               </div> : null}
           </div>
