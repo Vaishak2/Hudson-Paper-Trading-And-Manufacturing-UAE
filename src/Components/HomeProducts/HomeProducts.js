@@ -12,7 +12,7 @@ function HomeProducts() {
     const productList = [
         {
             id: 1,
-            name: 'Bleached Kraft Papers (MG and MF)',
+            name: 'Kraft Papers (MG and MF)',
             image: whitebleach,
             dis: 'Bleached kraft papers are made from wood pulp that has been bleached to achieve a white color.',
             strength: 'High tensile strength and tear resistance.',
