@@ -7,6 +7,7 @@ import Rectangle from '../../Assets/Rectangle 38681.png'
 import Rectangle3891 from '../../Assets/Rectangle 3891.png'
 import Rectangle3892 from '../../Assets/Rectangle 3892.png'
 
+import paperRopes from '../../Assets/product images/paper ropes 2.jpg'
 import whitebleach from '../../Assets/product images/Artboard 3.png'
 import wrappong from '../../Assets/product images/Artboard 4.png'
 import gree from '../../Assets/product images/Artboard 1.png'
@@ -31,6 +32,15 @@ function Productdetails() {
   }, [])
 
   const productList = [
+    {
+      "id": 0,
+      "name": "Paper Ropes in Reels ( 5000 meter per roll )",
+      "image": paperRopes,
+      "dis": "These paper ropes are made from high-quality, durable paper materials, available in a variety of colors, including white, red, brown, and black.",
+      "strength": "High tensile strength and resistance to breakage, ensuring reliable use across various applications.",
+      "surface": "Smooth and consistent, ensuring uniform appearance and easy handling. Maintains color and texture under tension, ideal for aesthetic and functional applications.",
+      "uses": "Commonly used in packaging, crafting, decoration, and industrial applications, these paper ropes are versatile and suitable for both practical and decorative purposes."
+    },
     {
       "id": 1,
       "name": "Kraft Papers (MG and MF)",
