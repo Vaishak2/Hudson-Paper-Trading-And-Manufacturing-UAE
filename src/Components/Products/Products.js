@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react'
 import { Form, Link } from 'react-router-dom'
+import paperRopes from '../../Assets/product images/paper ropes.jpg'
 import whitebleach from '../../Assets/product images/Artboard 3.png'
 import wrappong from '../../Assets/product images/Artboard 4.png'
 import gree from '../../Assets/product images/Artboard 1.png'
@@ -26,6 +27,15 @@ function Products() {
     }, [])
 
     const productList = [
+        {
+            "id": 0,
+            "name": "Paper Ropes in Reels",
+            "image": paperRopes,
+            "dis": "These paper ropes are made from high-quality, durable paper materials, available in a variety of colors, including white, red, brown, and black.",
+            "strength": "High tensile strength and resistance to breakage, ensuring reliable use across various applications.",
+            "surface": "Smooth and consistent, ensuring uniform appearance and easy handling. Maintains color and texture under tension, ideal for aesthetic and functional applications.",
+            "uses": "Commonly used in packaging, crafting, decoration, and industrial applications, these paper ropes are versatile and suitable for both practical and decorative purposes."
+        },
         {
             "id": 1,
             "name": "Kraft Papers (MG and MF)",
