@@ -282,7 +282,7 @@ function Productdetails() {
         </div>
       </div>
 
-      {productsToDisplay.length !== 0 ? <div className='sm:text-[32px] mt-[72px] font-medium'>More products of us</div> : null}
+      {productsToDisplay.length !== 0 ? <div className='sm:text-[32px] mt-[72px] font-medium'>More products</div> : null}
       <div className='grid sm:grid-cols-3 grid-cols-1 gap-6 font-sans'>
         {productsToDisplay.map(product => (
           <div className='mt-8'>
