@@ -21,7 +21,7 @@ function Contact() {
         setResult("Sending....");
         const formData = new FormData(event.target);
 
-        formData.append("access_key", "3bb1cf2b-ef2d-4f7d-bff7-e5a5f05cb206");
+        formData.append("access_key", "db85bad0-62ee-4b96-a378-2a78744fd5cb");
 
         const response = await fetch("https://api.web3forms.com/submit", {
             method: "POST",
@@ -52,6 +52,12 @@ function Contact() {
         } else {
             console.log("Error", data);
             setResult(data.message);
+            // Toast.fire({
+            //     icon: 'error',
+            //     title: 'Unfortunately form not submitted.',
+            //     text: 'Please contact us by mail through',
+            // });
+            
         }
     };
 
